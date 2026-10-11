@@ -135,13 +135,20 @@ export default function AuthModal({
         </div>
 
         {/* Supabase Status / Notice */}
-        {!isConfigured && (
-          <div className="mt-4 rounded-xl border border-emerald-400/20 bg-emerald-500/[.06] p-3 text-xs">
+        {!isConfigured ? (
+          <div className="mt-4 rounded-xl border border-amber-400/20 bg-amber-500/[.06] p-3 text-xs">
             <div className="flex items-start gap-2.5">
-              <Database size={16} className="text-emerald-300 mt-0.5 shrink-0" />
+              <Database size={16} className="text-amber-400 mt-0.5 shrink-0" />
               <div className="text-slate-300 leading-relaxed">
-                <span className="font-semibold text-emerald-200">Supabase Connected:</span> Ready for your credentials in <code className="text-emerald-300 font-mono">.env.local</code>. You can also test with Instant Demo Login!
+                <span className="font-semibold text-amber-200">Supabase Not Connected:</span> Add credentials in Vercel Environment Variables or <code className="text-amber-300 font-mono">.env.local</code>. You can also test with Instant Demo Login!
               </div>
+            </div>
+          </div>
+        ) : (
+          <div className="mt-4 rounded-xl border border-emerald-400/20 bg-emerald-500/[.06] p-2.5 text-xs">
+            <div className="flex items-center gap-2 text-emerald-300">
+              <CheckCircle2 size={14} className="shrink-0 text-emerald-400" />
+              <span>Supabase Cloud Connected (Live Authentication)</span>
             </div>
           </div>
         )}
