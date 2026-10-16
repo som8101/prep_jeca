@@ -1,0 +1,200 @@
+[
+  {
+    "id": "cn-001",
+    "subject": "Computer Network",
+    "topic": "Reference models",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which layer of the OSI reference model is responsible for end-to-end reliable data transmission and flow control?",
+    "options": [
+      "Network layer",
+      "Data Link layer",
+      "Transport layer",
+      "Session layer"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The Transport Layer (Layer 4) provides transparent, reliable host-to-host data delivery, error recovery, and flow control (e.g. TCP).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "cn-002",
+    "subject": "Computer Network",
+    "topic": "IP, UDP & TCP protocols",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "During TCP connection establishment (Three-Way Handshake), what flags are exchanged between client and server?",
+    "options": [
+      "SYN -> SYN-ACK -> ACK",
+      "ACK -> SYN -> SYN-ACK",
+      "SYN -> ACK -> FIN",
+      "RST -> SYN -> ACK"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "TCP 3-way handshake sequence: 1) Client sends SYN; 2) Server responds with SYN + ACK; 3) Client sends ACK.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "cn-003",
+    "subject": "Computer Network",
+    "topic": "IPv4 and IPv6",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "What is the bit-length of an IPv6 address compared to an IPv4 address?",
+    "options": [
+      "64 bits vs 32 bits",
+      "128 bits vs 32 bits",
+      "128 bits vs 64 bits",
+      "256 bits vs 32 bits"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "IPv6 addresses are 128 bits (16 bytes) long, whereas IPv4 addresses are 32 bits (4 bytes) long.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "cn-004",
+    "subject": "Computer Network",
+    "topic": "Application protocols",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which transport protocol and default port does the Domain Name System (DNS) use for standard domain name resolution queries?",
+    "options": [
+      "TCP port 80",
+      "UDP port 53",
+      "TCP port 443",
+      "UDP port 67"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Standard DNS client lookup queries use UDP on port 53 for low latency. Zone transfers use TCP port 53.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "cn-005",
+    "subject": "Computer Network",
+    "topic": "Routing algorithms",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "The Count-to-Infinity problem is a known drawback of which routing algorithm?",
+    "options": [
+      "Distance Vector Routing (Bellman-Ford)",
+      "Link State Routing (Dijkstra)",
+      "Flooding",
+      "Path Vector Routing"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Distance Vector routing (RIP) suffers from the count-to-infinity problem when a link goes down, mitigated by split horizon and poison reverse.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "cn-006",
+    "subject": "Computer Network",
+    "topic": "Network Security",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which cryptographic protocol operates at the Transport layer to provide privacy and data integrity between two communicating web applications?",
+    "options": [
+      "IPsec",
+      "TLS (Transport Layer Security)",
+      "SSH",
+      "WPA3"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "TLS (and its predecessor SSL) sits on top of the transport layer (TCP) to encrypt HTTP traffic (HTTPS).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "cn-007",
+    "subject": "Computer Network",
+    "topic": "Reliable data transferring methods",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "In the Go-Back-N ARQ protocol with an m-bit sequence number, what is the maximum sender window size?",
+    "options": [
+      "2^m",
+      "2^m - 1",
+      "2^(m-1)",
+      "m"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In Go-Back-N with m-bit sequence numbers, the sender window size must be at most 2^m - 1 to avoid ambiguous acknowledgment overlaps.",
+    "pyqYear": 2021
+  },
+  {
+    "id": "cn-008",
+    "subject": "Computer Network",
+    "topic": "Classification",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "What is the broadcast IP address for the local subnet `192.168.1.0/24`?",
+    "options": [
+      "192.168.1.0",
+      "192.168.1.1",
+      "192.168.1.254",
+      "192.168.1.255"
+    ],
+    "answer": 3,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In a /24 subnet (netmask 255.255.255.0), the host bits set to all 1s (255) represent the broadcast address: 192.168.1.255.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "cn-009",
+    "subject": "Computer Network",
+    "topic": "IP, UDP & TCP protocols",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following characteristics distinguish TCP from UDP?",
+    "options": [
+      "TCP is connection-oriented; UDP is connectionless.",
+      "TCP guarantees in-order segment delivery; UDP does not guarantee packet ordering.",
+      "TCP header has a minimum size of 20 bytes; UDP header is fixed at 8 bytes.",
+      "TCP supports broadcast transmissions, whereas UDP only supports point-to-point unicast."
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Option D is incorrect because UDP supports broadcasting and multicasting, while TCP is strictly unicast point-to-point. Options A, B, and C are true facts.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "cn-010",
+    "subject": "Computer Network",
+    "topic": "Application protocols",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following application layer protocols run over TCP as their underlying transport protocol?",
+    "options": [
+      "HTTP / HTTPS (Web)",
+      "SMTP (Email delivery)",
+      "FTP (File Transfer)",
+      "TFTP (Trivial File Transfer Protocol)"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "HTTP, SMTP, and FTP require reliable delivery and use TCP. TFTP (Trivial File Transfer Protocol) intentionally runs over UDP (port 69).",
+    "pyqYear": 2023
+  }
+]

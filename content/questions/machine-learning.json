@@ -1,0 +1,200 @@
+[
+  {
+    "id": "ml-001",
+    "subject": "Machine Learning",
+    "topic": "Classification",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "In binary classification evaluation, what is the formula for Precision?",
+    "options": [
+      "TP / (TP + FP)",
+      "TP / (TP + FN)",
+      "(TP + TN) / (Total)",
+      "TN / (TN + FP)"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Precision = True Positives / (True Positives + False Positives). Recall = True Positives / (True Positives + False Negatives).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "ml-002",
+    "subject": "Machine Learning",
+    "topic": "Clustering",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which machine learning algorithm is an unsupervised iterative algorithm that partitions n observations into k clusters based on centroid distances?",
+    "options": [
+      "k-Nearest Neighbors (k-NN)",
+      "K-Means Clustering",
+      "Support Vector Machines",
+      "Logistic Regression"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "K-Means is an unsupervised clustering algorithm. In contrast, k-NN is a supervised classification/regression algorithm.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "ml-003",
+    "subject": "Machine Learning",
+    "topic": "Decision Tree Learning",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "In the ID3 algorithm for Decision Trees, which metric is used to select the best attribute for splitting at each node?",
+    "options": [
+      "Information Gain (Entropy reduction)",
+      "Gini Impurity",
+      "Mean Squared Error",
+      "Cosine Similarity"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Quinlan's ID3 algorithm measures Shannon Entropy and selects the attribute that maximizes Information Gain. CART uses Gini impurity.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "ml-004",
+    "subject": "Machine Learning",
+    "topic": "Support Vector Machines",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "What role does the 'Kernel Trick' play in Support Vector Machines (SVM)?",
+    "options": [
+      "It accelerates convergence of gradient descent in deep nets",
+      "It maps non-linearly separable input data into a higher-dimensional feature space where it becomes linearly separable, without explicitly computing coordinates",
+      "It performs automated feature selection by zeroing out coefficients",
+      "It replaces the hinge loss with quadratic loss"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The kernel trick evaluates dot products in high-dimensional Hilbert space via kernel functions (e.g. RBF/Polynomial) without explicit expensive coordinate transformations.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "ml-005",
+    "subject": "Machine Learning",
+    "topic": "Bayesian Learning",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "What 'naive' conditional independence assumption does the Naive Bayes classifier make?",
+    "options": [
+      "All features are completely dependent on each other",
+      "All features are conditionally independent given the class label",
+      "The dataset contains no missing values",
+      "Class priors are always equal to 0.5"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Naive Bayes assumes that the presence or absence of a particular feature is independent of the value of any other feature, given the class variable.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "ml-006",
+    "subject": "Machine Learning",
+    "topic": "Artificial Neural Networks",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which activation function outputs values strictly in the range (0, 1) and was traditionally used for binary probability estimation?",
+    "options": [
+      "ReLU",
+      "Sigmoid",
+      "Leaky ReLU",
+      "Linear"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The logistic sigmoid function σ(z) = 1 / (1 + e^-z) maps any real value into the open interval (0, 1).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "ml-007",
+    "subject": "Machine Learning",
+    "topic": "Hidden Markov Models",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "Which dynamic programming algorithm is used to find the most likely sequence of hidden states (the Viterbi path) in a Hidden Markov Model?",
+    "options": [
+      "Forward algorithm",
+      "Backward algorithm",
+      "Viterbi algorithm",
+      "Baum-Welch algorithm"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The Viterbi algorithm uses dynamic programming to efficiently compute the maximum-likelihood hidden state sequence.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "ml-008",
+    "subject": "Machine Learning",
+    "topic": "Classification",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Overfitting in a machine learning model occurs when:",
+    "options": [
+      "The model performs poorly on training data and test data",
+      "The model memorizes noise and idiosyncrasies of training data, performing poorly on unseen test data",
+      "The learning rate is too large",
+      "Training epochs are insufficient"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Overfitting features low training error but high test error (generalization gap) due to high model variance.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "ml-009",
+    "subject": "Machine Learning",
+    "topic": "Artificial Neural Networks",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following techniques are commonly used to prevent overfitting in deep neural networks?",
+    "options": [
+      "Dropout",
+      "L2 Weight Regularization (Weight Decay)",
+      "Early Stopping",
+      "Increasing model parameter count tenfold"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Dropout, L2 regularization, and Early Stopping are standard regularization methods. Arbitrarily increasing parameters without data increases overfitting risk.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "ml-010",
+    "subject": "Machine Learning",
+    "topic": "Clustering",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following are characteristics of the K-Means clustering algorithm?",
+    "options": [
+      "Sensitive to the initial selection of centroids (can get stuck in local minima).",
+      "Requires the number of clusters 'k' to be specified in advance.",
+      "Sensitive to outliers and extreme values.",
+      "Guarantees finding the globally optimal clustering partition."
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "K-Means is an NP-hard heuristic that converges to local minima (not guaranteed global optimum), requires pre-specified k, and is sensitive to initialization and outliers.",
+    "pyqYear": 2023
+  }
+]

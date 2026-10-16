@@ -1,0 +1,58 @@
+{
+  "id": "jeca-sectional-c-oops",
+  "title": "Sectional Mock: C Programming & OOPs",
+  "description": "Targeted 20-question test covering pointers, memory, classes, virtual functions, templates, and preprocessor directives.",
+  "category": "SECTIONAL",
+  "durationMinutes": 30,
+  "totalQuestions": 20,
+  "totalMarks": 24,
+  "sections": [
+    {
+      "id": "sec-cat-1",
+      "name": "Section 1: Category-I (16 Qs)",
+      "description": "16 Single correct questions, 1 mark each (-0.25 negative mark).",
+      "questionIds": [
+        "c-001",
+        "c-002",
+        "c-003",
+        "c-004",
+        "c-005",
+        "c-006",
+        "c-007",
+        "c-008",
+        "oop-001",
+        "oop-002",
+        "oop-003",
+        "oop-004",
+        "oop-005",
+        "oop-006",
+        "oop-007",
+        "oop-008"
+      ],
+      "marksPerQuestion": 1,
+      "negativeMarks": 0.25,
+      "type": "MCQ_SINGLE"
+    },
+    {
+      "id": "sec-cat-2",
+      "name": "Section 2: Category-II (4 Qs)",
+      "description": "4 Multiple correct questions, 2 marks each (partial credit).",
+      "questionIds": [
+        "c-009",
+        "c-010",
+        "oop-009",
+        "oop-010"
+      ],
+      "marksPerQuestion": 2,
+      "negativeMarks": 0,
+      "type": "MCQ_MULTI"
+    }
+  ],
+  "rules": {
+    "shuffleQuestions": false,
+    "shuffleOptions": false,
+    "allowCalculator": false,
+    "maxStrikes": 3,
+    "autosaveIntervalSeconds": 5
+  }
+}

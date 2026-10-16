@@ -1,0 +1,201 @@
+[
+  {
+    "id": "dbms-001",
+    "subject": "Database Management System",
+    "topic": "Normalization",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "A relation is in Boyce-Codd Normal Form (BCNF) if and only if for every non-trivial functional dependency X -> Y:",
+    "options": [
+      "Y is a subset of X",
+      "X is a superkey",
+      "Y is a prime attribute",
+      "X is in 2NF"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "BCNF strictly requires that the determinant X in every non-trivial functional dependency X -> Y must be a superkey of the relation.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "dbms-002",
+    "subject": "Database Management System",
+    "topic": "Transactions",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which component of the ACID properties ensures that once a transaction commits, its updates persist in the database even across power failures?",
+    "options": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "answer": 3,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Durability guarantees that committed transaction changes survive crashes via write-ahead logging (WAL) and disk persistence.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "dbms-003",
+    "subject": "Database Management System",
+    "topic": "SQL",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which SQL clause is used to filter groups created by the `GROUP BY` clause?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER BY",
+      "LIKE"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The `WHERE` clause filters individual rows before grouping, whereas the `HAVING` clause filters aggregated groups.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "dbms-004",
+    "subject": "Database Management System",
+    "topic": "Indexing",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "What is the primary structural benefit of a B+ Tree index over a standard B Tree index in a relational database?",
+    "options": [
+      "B+ Tree stores data records in interior nodes",
+      "All keys and data pointers are duplicated at the leaf level, and leaves are linked sequentially for efficient range queries",
+      "B+ Tree has greater tree height for the same number of keys",
+      "B+ Tree does not require rebalancing on insertion"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In a B+ Tree, leaf nodes contain all data records/pointers and are chained as a doubly linked list, allowing high-performance sequential range scanning.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "dbms-005",
+    "subject": "Database Management System",
+    "topic": "Relational Algebra",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which relational algebra operation corresponds to selecting specific columns (attributes) from a relation?",
+    "options": [
+      "Selection (σ)",
+      "Projection (π)",
+      "Cartesian Product (×)",
+      "Join (⨝)"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Projection (denoted by π) chooses vertical columns/attributes, while Selection (σ) filters horizontal rows/tuples.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "dbms-006",
+    "subject": "Database Management System",
+    "topic": "Transactions",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "What concurrency control protocol guarantees serializability but can still suffer from deadlocks?",
+    "options": [
+      "Strict Two-Phase Locking (2PL)",
+      "Timestamp Ordering",
+      "Conservative (Static) 2PL",
+      "Snapshot Isolation"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Basic and Strict Two-Phase Locking (2PL) guarantee conflict serializability, but because transactions acquire locks dynamically in the growing phase, deadlocks can occur.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "dbms-007",
+    "subject": "Database Management System",
+    "topic": "ER diagram",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "In an Entity-Relationship (ER) diagram, how are Weak Entities represented according to Chen notation?",
+    "options": [
+      "Single rectangle",
+      "Double rectangle",
+      "Dashed oval",
+      "Diamond"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In Chen's ER notation, weak entity sets (which lack a primary key of their own) are depicted using double rectangles.",
+    "pyqYear": 2021
+  },
+  {
+    "id": "dbms-008",
+    "subject": "Database Management System",
+    "topic": "Normalization",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "A relation R is in Third Normal Form (3NF) if it is in 2NF and:",
+    "options": [
+      "Every non-prime attribute is non-transitively dependent on the primary key",
+      "It has no composite keys",
+      "It contains multi-valued dependencies",
+      "Every determinant is a candidate key"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "3NF eliminates transitive dependencies: for every X -> A, either X is a superkey or A is a prime attribute.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "dbms-009",
+    "subject": "Database Management System",
+    "topic": "SQL",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following SQL commands belong to Data Definition Language (DDL)?",
+    "options": [
+      "CREATE",
+      "ALTER",
+      "DROP",
+      "INSERT"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "CREATE, ALTER, and DROP modify table definitions and schemas (DDL). INSERT is Data Manipulation Language (DML).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "dbms-010",
+    "subject": "Database Management System",
+    "topic": "Transactions",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following anomalies are prevented at the `SERIALIZABLE` transaction isolation level in standard SQL?",
+    "options": [
+      "Dirty Read",
+      "Non-Repeatable Read",
+      "Phantom Read",
+      "Lost Update"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "The SERIALIZABLE isolation level is the strictest ANSI SQL level and prevents dirty reads, non-repeatable reads, phantom reads, and lost updates.",
+    "pyqYear": 2023
+  }
+]

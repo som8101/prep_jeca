@@ -1,0 +1,201 @@
+[
+  {
+    "id": "se-001",
+    "subject": "Software Engineering",
+    "topic": "Process models",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which software development process model is best suited when requirements are well understood and unlikely to change radically?",
+    "options": [
+      "Waterfall Model",
+      "Spiral Model",
+      "Prototyping Model",
+      "Agile Scrum"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The classic Waterfall model follows a linear sequential flow suitable for projects with stable, explicit requirements.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "se-002",
+    "subject": "Software Engineering",
+    "topic": "Testing Strategies",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "What is the primary objective of Regression Testing?",
+    "options": [
+      "To verify that the system can handle extreme user workloads",
+      "To ensure that new code changes or bug fixes have not broken existing functionality",
+      "To test software components without access to source code",
+      "To evaluate UI design responsiveness"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Regression testing re-executes tests to confirm that recent modifications or enhancements have not introduced regressions into working features.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "se-003",
+    "subject": "Software Engineering",
+    "topic": "Design Engineering",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "In software module design, what is the ideal combination of Coupling and Cohesion?",
+    "options": [
+      "High Coupling and Low Cohesion",
+      "Low Coupling and High Cohesion",
+      "High Coupling and High Cohesion",
+      "Low Coupling and Low Cohesion"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Effective software architecture seeks High Cohesion (elements within a module are closely focused on a single responsibility) and Low Coupling (minimal inter-module dependencies).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "se-004",
+    "subject": "Software Engineering",
+    "topic": "Product metrices",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "In McCabe's Cyclomatic Complexity metric, if a program control flow graph has E edges, N nodes, and P connected components, the complexity V(G) is computed as:",
+    "options": [
+      "V(G) = E - N + 2P",
+      "V(G) = E + N - P",
+      "V(G) = N - E + 2",
+      "V(G) = E / N"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "McCabe's formula for cyclomatic complexity is V(G) = E - N + 2P, representing the number of linearly independent execution paths.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "se-005",
+    "subject": "Software Engineering",
+    "topic": "Testing Strategies",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Boundary Value Analysis (BVA) is a technique used in:",
+    "options": [
+      "White-box testing",
+      "Black-box testing",
+      "Mutation testing",
+      "Performance testing"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Boundary Value Analysis tests input values at the edges of equivalence partitions, making it a cornerstone black-box testing method.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "se-006",
+    "subject": "Software Engineering",
+    "topic": "Risk management",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "The Spiral Model of software development incorporates an explicit cycle of which critical activity in every quadrant?",
+    "options": [
+      "Risk Analysis and Assessment",
+      "Automated deployment",
+      "Marketing survey",
+      "Formal mathematical proofs"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Boehm's Spiral Model is risk-driven, dedicating quadrant 2 of every spiral cycle to identifying and resolving risks.",
+    "pyqYear": 2021
+  },
+  {
+    "id": "se-007",
+    "subject": "Software Engineering",
+    "topic": "Requirements engineering process",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "What does the abbreviation SRS stand for in software development?",
+    "options": [
+      "System Recovery Service",
+      "Software Requirements Specification",
+      "Structured Resource Standard",
+      "Standard Release Schedule"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "SRS is the official document detailing all functional and non-functional requirements agreed between customer and development team.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "se-008",
+    "subject": "Software Engineering",
+    "topic": "Quality Management",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "At Capability Maturity Model (CMM) Level 3, software processes are defined as:",
+    "options": [
+      "Initial",
+      "Repeatable",
+      "Defined",
+      "Optimizing"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The 5 CMM levels are: 1-Initial, 2-Repeatable, 3-Defined, 4-Managed, 5-Optimizing.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "se-009",
+    "subject": "Software Engineering",
+    "topic": "Testing Strategies",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following are White-Box (structural) testing techniques?",
+    "options": [
+      "Statement Coverage",
+      "Branch / Decision Coverage",
+      "Equivalence Partitioning",
+      "Condition / Path Coverage"
+    ],
+    "answer": [
+      0,
+      1,
+      3
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Statement, Branch, and Path coverage require access to internal source code structure (White-Box). Equivalence Partitioning is a specification-based Black-Box technique.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "se-010",
+    "subject": "Software Engineering",
+    "topic": "Process models",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following principles are core tenets of the Agile Manifesto?",
+    "options": [
+      "Individuals and interactions over processes and tools",
+      "Working software over comprehensive documentation",
+      "Customer collaboration over contract negotiation",
+      "Responding to change over following a plan"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "All four statements represent the four fundamental value pairs defined in the Agile Manifesto.",
+    "pyqYear": 2024
+  }
+]

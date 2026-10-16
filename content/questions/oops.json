@@ -1,0 +1,199 @@
+[
+  {
+    "id": "oop-001",
+    "subject": "Object Oriented Programming",
+    "topic": "Polymorphism",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "In C++, dynamic dispatch (runtime polymorphism) is achieved through which of the following mechanisms?",
+    "options": [
+      "Function overloading",
+      "Virtual functions and base class pointers/references",
+      "Templates",
+      "Operator overloading"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In C++, runtime polymorphism requires virtual member functions invoked via base class pointers or references using a vtable (virtual method table).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "oop-002",
+    "subject": "Object Oriented Programming",
+    "topic": "Abstract base class",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "How is an abstract base class defined in C++?",
+    "options": [
+      "By prepending the `abstract` keyword before the class definition",
+      "By declaring at least one pure virtual function (`virtual void f() = 0;`)",
+      "By making all member variables private",
+      "By inheriting from class `std::abstract`"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In C++, a class containing at least one pure virtual function (syntax `= 0`) is an abstract class and cannot be directly instantiated.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "oop-003",
+    "subject": "Object Oriented Programming",
+    "topic": "Constructors",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "If a base class destructor is NOT declared virtual in C++, what happens when a derived class object is deleted via a base class pointer?",
+    "options": [
+      "Compilation error",
+      "Only the derived class destructor is called",
+      "Only the base class destructor is called, causing undefined behavior / memory leak",
+      "Both destructors are automatically called in reverse order"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Deleting a derived object through a base pointer without a virtual destructor results in undefined behavior; typically only the base destructor executes, leaving derived resources leaked.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "oop-004",
+    "subject": "Object Oriented Programming",
+    "topic": "Friendship (Friend Functions & Friend Classes)",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which of the following is TRUE regarding a `friend` function in C++?",
+    "options": [
+      "It is a member function of the class declaring it",
+      "It has access to private and protected members of the class",
+      "Friendship is transitive (if A is friend of B, and B of C, A is friend of C)",
+      "Friendship is inherited by derived classes"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "A friend function is a non-member function granted special access to private and protected members. Friendship is neither inherited nor transitive.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "oop-005",
+    "subject": "Object Oriented Programming",
+    "topic": "Keyword 'this'",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "What is the type of the `this` pointer inside a `const` member function of class `Sample`?",
+    "options": [
+      "Sample*",
+      "const Sample*",
+      "const Sample* const",
+      "Sample&"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Inside a non-const member function, `this` is `Sample* const`. Inside a const member function, it points to a constant object, so its type is `const Sample* const`.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "oop-006",
+    "subject": "Object Oriented Programming",
+    "topic": "Static Members",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which of the following operations can a `static` member function in C++ perform?",
+    "options": [
+      "Directly access non-static member variables using `this`",
+      "Call another non-static member function directly without an object instance",
+      "Access only static member variables and static member functions directly",
+      "Be declared as `virtual`"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Static member functions do not receive an implicit `this` pointer, so they cannot access non-static members directly or be declared virtual.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "oop-007",
+    "subject": "Object Oriented Programming",
+    "topic": "Inheritance",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "What problem is solved by `virtual base class` inheritance in C++?",
+    "options": [
+      "Slow execution speed during compilation",
+      "Diamond problem (multiple duplicate subobjects of base class in multiple inheritance)",
+      "Lack of private inheritance",
+      "Overloading conflicts in constructors"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The diamond problem occurs when two classes inherit from a common base and a fourth class inherits from both. Virtual inheritance guarantees only a single shared instance of the base class is constructed.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "oop-008",
+    "subject": "Object Oriented Programming",
+    "topic": "Overloading Operators",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which of the following operators CANNOT be overloaded in C++?",
+    "options": [
+      "++",
+      "[]",
+      ":: (Scope resolution)",
+      "->"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In C++, the scope resolution operator `::`, dot operator `.`, member selection through pointer-to-member `.*`, and ternary conditional `?:` cannot be overloaded.",
+    "pyqYear": 2021
+  },
+  {
+    "id": "oop-009",
+    "subject": "Object Oriented Programming",
+    "topic": "Inheritance",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "When a derived class inherits from a base class using `protected` inheritance in C++, which of the following member visibility transformations occur?",
+    "options": [
+      "`public` members of the base class become `protected` in the derived class.",
+      "`protected` members of the base class become `protected` in the derived class.",
+      "`private` members of the base class become accessible to derived class members.",
+      "Objects of the derived class can access public members of the base class directly from outside."
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Under protected inheritance: base public and protected members both become protected in the derived class. Private members remain private to the base class and inaccessible. Outside objects cannot access protected members.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "oop-010",
+    "subject": "Object Oriented Programming",
+    "topic": "Class Templates",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following statements about C++ templates are CORRECT?",
+    "options": [
+      "Template code is instantiated at compile-time for each distinct type used.",
+      "Templates enforce strict static type checking.",
+      "Template specialization allows customizing implementation for a specific type.",
+      "Templates increase binary code size only when called via runtime virtual dispatch."
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Templates generate code at compile-time (monomorphization), verify types strictly, and allow template specialization. Binary code duplication happens whenever different types instantiate the template, unrelated to virtual dispatch.",
+    "pyqYear": 2024
+  }
+]

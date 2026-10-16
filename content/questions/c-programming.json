@@ -1,0 +1,199 @@
+[
+  {
+    "id": "c-001",
+    "subject": "C Programming",
+    "topic": "Pointers",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "What is the output of the following C code snippet?\n```c\n#include <stdio.h>\nint main() {\n    int a = 10, *p = &a, **pp = &p;\n    printf(\"%d\", **pp + 5);\n    return 0;\n}\n```",
+    "options": [
+      "10",
+      "15",
+      "Compilation Error",
+      "Garbage value"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "**pp dereferences the pointer-to-pointer 'pp' twice, which resolves to the integer value of 'a' (10). Thus, 10 + 5 = 15.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "c-002",
+    "subject": "C Programming",
+    "topic": "Pre-Processor Directives",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "What is the output of the following C code?\n```c\n#define SQUARE(x) x * x\n#include <stdio.h>\nint main() {\n    int res = SQUARE(2 + 3);\n    printf(\"%d\", res);\n    return 0;\n}\n```",
+    "options": [
+      "25",
+      "11",
+      "16",
+      "Compilation Error"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Macro replacement does not add parentheses. SQUARE(2 + 3) expands textually to 2 + 3 * 2 + 3. By operator precedence, 3 * 2 = 6, so 2 + 6 + 3 = 11.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "c-003",
+    "subject": "C Programming",
+    "topic": "String Handling",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which standard C library function returns a pointer to the first occurrence of string s2 in string s1?",
+    "options": [
+      "strchr()",
+      "strstr()",
+      "strrchr()",
+      "strpbrk()"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "strstr(s1, s2) locates the first occurrence of the substring s2 within s1. strchr() searches for a single character.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "c-004",
+    "subject": "C Programming",
+    "topic": "Structures and Unions",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "What is the primary difference in memory allocation between a `struct` and a `union` in C?",
+    "options": [
+      "A union allocates memory equal to the sum of all its members",
+      "A union allocates memory equal to the size of its largest member",
+      "A struct allocates memory dynamically at runtime",
+      "A struct can only contain primitive data types"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In C, union members share the same memory location, so the total memory allocated is equal to the size of its largest member (subject to padding). Struct allocates distinct memory for each member.",
+    "pyqYear": 2021
+  },
+  {
+    "id": "c-005",
+    "subject": "C Programming",
+    "topic": "Control Flow statements",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "What will be the output of the following C code?\n```c\n#include <stdio.h>\nint main() {\n    int x = 1;\n    switch(x) {\n        case 1: printf(\"A\");\n        case 2: printf(\"B\");\n        default: printf(\"C\");\n    }\n    return 0;\n}\n```",
+    "options": [
+      "A",
+      "AB",
+      "ABC",
+      "Compilation Error"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Because there is no `break` statement after `case 1`, execution falls through into `case 2` and `default`, printing 'ABC'.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "c-006",
+    "subject": "C Programming",
+    "topic": "Array",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "If `arr` is an integer array of size 10, which of the following expressions is equivalent to `arr[i]`?",
+    "options": [
+      "*(arr + i)",
+      "i[arr]",
+      "*(&arr[0] + i)",
+      "All of the above"
+    ],
+    "answer": 3,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In C, array subscript notation `a[b]` is evaluated as `*(a + b)`. Since addition is commutative, `*(arr + i)`, `i[arr]`, and `*(&arr[0] + i)` are all functionally identical.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "c-007",
+    "subject": "C Programming",
+    "topic": "Files Handling",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "In standard C, which file open mode opens an existing file for both reading and appending without truncating it?",
+    "options": [
+      "\"r+\"",
+      "\"w+\"",
+      "\"a+\"",
+      "\"rb\""
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "\"a+\" opens a file for update (both reading and appending). Output is always written to the end of the file, preserving existing contents.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "c-008",
+    "subject": "C Programming",
+    "topic": "Variables and Data types",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "What is the return type of the expression `sizeof('a')` in a standard C compiler (C99/C11)?",
+    "options": [
+      "char",
+      "int / size_t",
+      "short",
+      "undefined"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In C, character constants like 'a' are of type `int` (character literals are promoted to int), so `sizeof('a') == sizeof(int)`, and sizeof itself evaluates to `size_t`.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "c-009",
+    "subject": "C Programming",
+    "topic": "Pointers",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following statements about C pointers are TRUE?",
+    "options": [
+      "Void pointers (void*) can hold the address of any data type without an explicit cast.",
+      "Pointer arithmetic is valid between two pointers pointing to elements of different arrays.",
+      "Subtracting two pointers of the same type yields the number of elements between them (ptrdiff_t).",
+      "A NULL pointer is guaranteed to compare equal to 0."
+    ],
+    "answer": [
+      0,
+      2,
+      3
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Option B is false because pointer arithmetic (subtraction or comparison) between pointers to different arrays causes undefined behavior in standard C. Options A, C, and D are fully conforming rules.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "c-010",
+    "subject": "C Programming",
+    "topic": "Functions",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following storage classes in C cause a variable to retain its value between successive function calls?",
+    "options": [
+      "auto",
+      "static (local to function)",
+      "extern (global linkage)",
+      "register"
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Static variables inside a function and global (extern) variables have static storage duration and persist across function invocations. 'auto' and 'register' variables have automatic storage duration and are destroyed when the block exits.",
+    "pyqYear": 2023
+  }
+]

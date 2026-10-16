@@ -1,0 +1,200 @@
+[
+  {
+    "id": "coa-001",
+    "subject": "Introduction of Computers",
+    "topic": "DMA",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "In Direct Memory Access (DMA), who controls the system buses during data transfer between I/O device and RAM?",
+    "options": [
+      "CPU",
+      "DMA Controller",
+      "ALU",
+      "Cache Controller"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The DMA Controller takes control of the address and data buses from the CPU to perform high-speed block data transfers directly to RAM.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "coa-002",
+    "subject": "Introduction of Computers",
+    "topic": "Pipeline",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "In a 5-stage instruction pipeline, if an instruction depends on the result of the immediately preceding instruction, what type of hazard occurs?",
+    "options": [
+      "Structural hazard",
+      "Data hazard",
+      "Control hazard",
+      "Branch hazard"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "A data hazard (Read-After-Write or RAW) occurs when an instruction requires data that has not yet been computed or written back by a prior in-flight instruction.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "coa-003",
+    "subject": "Introduction of Computers",
+    "topic": "Interrupt",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "What is the non-maskable interrupt (NMI) in a microprocessor?",
+    "options": [
+      "An interrupt that can be disabled by software instructions",
+      "A high-priority interrupt that cannot be ignored or masked by the CPU",
+      "An interrupt generated only during software arithmetic overflow",
+      "An interrupt generated exclusively by timer tick"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "An NMI is a hardware interrupt that cannot be disabled (masked) by software, used for catastrophic system events like power failure or memory parity error.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "coa-004",
+    "subject": "Introduction of Computers",
+    "topic": "RAM",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Why does Dynamic RAM (DRAM) require periodic refreshing cycles?",
+    "options": [
+      "Because DRAM is constructed with magnetic core elements",
+      "Because data is stored as electric charge on capacitors that leak over time",
+      "To clear parity errors",
+      "Because DRAM is non-volatile"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "DRAM cells store bits as charge on tiny capacitors. Since capacitors naturally leak charge, cells must be periodically recharged (refreshed) to retain data.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "coa-005",
+    "subject": "Introduction of Computers",
+    "topic": "Bus structure",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "A computer has a 32-bit address bus. What is the maximum directly addressable physical memory capacity with byte-addressing?",
+    "options": [
+      "2 GB",
+      "4 GB",
+      "8 GB",
+      "16 GB"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "2^32 bytes = 4,294,967,296 bytes = 4 GB of addressable memory space.",
+    "pyqYear": 2021
+  },
+  {
+    "id": "coa-006",
+    "subject": "Introduction of Computers",
+    "topic": "System calls",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "A system call causes a transition in CPU execution privilege mode from:",
+    "options": [
+      "Kernel mode to User mode",
+      "User mode to Kernel mode",
+      "Real mode to Virtual mode",
+      "Single-core to Multi-core"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "User applications run in unprivileged User mode. When issuing a system call via a software trap, CPU privileges transition to Kernel (supervisor) mode.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "coa-007",
+    "subject": "Introduction of Computers",
+    "topic": "Subroutines",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "When a subroutine `CALL` instruction executes, where is the return address saved by the processor?",
+    "options": [
+      "Instruction Register (IR)",
+      "Accumulator",
+      "Call Stack in RAM",
+      "Program Counter directly"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "The processor pushes the current Program Counter (PC return address) onto the hardware/software call stack in memory before jumping to the subroutine target.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "coa-008",
+    "subject": "Introduction of Computers",
+    "topic": "ROM",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which type of ROM can be erased electrically using an electrical field without exposure to ultraviolet light?",
+    "options": [
+      "PROM",
+      "EPROM",
+      "EEPROM",
+      "Mask ROM"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "EEPROM (Electrically Erasable Programmable Read-Only Memory) is erased using electrical voltages byte-by-byte or block-by-block without UV light.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "coa-009",
+    "subject": "Introduction of Computers",
+    "topic": "Pipeline",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following techniques can mitigate or resolve Data Hazards in a pipelined CPU?",
+    "options": [
+      "Operand Forwarding / Bypassing",
+      "Inserting pipeline stalls (NOP bubbles)",
+      "Compiler instruction reordering / scheduling",
+      "Dynamic Branch Prediction"
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Operand forwarding routes results directly from ALU output back to ALU input. Stalls (bubbles) delay dependent instructions. Compiler reordering schedules independent instructions in between. Branch prediction targets control hazards, not data hazards.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "coa-010",
+    "subject": "Introduction of Computers",
+    "topic": "Basic I/O",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following statements about Memory-Mapped I/O versus Isolated (Port) I/O are TRUE?",
+    "options": [
+      "In Memory-Mapped I/O, I/O devices share the same address space as main memory.",
+      "Memory-Mapped I/O allows standard memory read/write instructions (like MOV, LOAD) to access I/O ports.",
+      "Isolated I/O requires dedicated processor instructions (e.g. IN and OUT in x86).",
+      "Isolated I/O consumes addresses from the main RAM address space."
+    ],
+    "answer": [
+      0,
+      1,
+      2
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Option D is false because Isolated I/O uses a separate address bus/control lines and does not reduce RAM address space. Options A, B, and C are correct.",
+    "pyqYear": 2023
+  }
+]

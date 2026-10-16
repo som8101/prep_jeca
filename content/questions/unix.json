@@ -1,0 +1,200 @@
+[
+  {
+    "id": "unix-001",
+    "subject": "Unix",
+    "topic": "Commands: ls, ps, pwd, mv, cp, touch, cat",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which Unix command displays the Process ID (PID) of currently running processes in the system?",
+    "options": [
+      "top / ps",
+      "pwd",
+      "grep",
+      "renice"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "`ps` reports snapshot status of current processes including their PID. `top` provides dynamic real-time view.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "unix-002",
+    "subject": "Unix",
+    "topic": "Commands: chmod, chown, chgrp, top, nice, renice",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "In Unix file permissions, what permissions does the octal value `754` represent for Owner, Group, and Others?",
+    "options": [
+      "Owner: rwx, Group: r-x, Others: r--",
+      "Owner: rwx, Group: rw-, Others: r--",
+      "Owner: rw-, Group: r-x, Others: -wx",
+      "Owner: r-x, Group: rwx, Others: r--"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "7 = 4+2+1 = rwx; 5 = 4+1 = r-x; 4 = 4 = r--. Thus, Owner has rwx, Group has r-x, Others have r--.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "unix-003",
+    "subject": "Unix",
+    "topic": "Commands: cut, paste, grep, file, whereis, which, echo",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which option of the `grep` command prints line numbers along with matching lines?",
+    "options": [
+      "-v",
+      "-n",
+      "-c",
+      "-l"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "`grep -n` prefixes each line of output with the 1-based line number within its input file.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "unix-004",
+    "subject": "Unix",
+    "topic": "Search: find and its different options",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which command finds all files in directory `/home/user` with extension `.log` modified within the last 24 hours?",
+    "options": [
+      "find /home/user -name \"*.log\" -mtime -1",
+      "search /home/user -ext log -time 1",
+      "find /home/user -type d -name \"*.log\"",
+      "grep -r \"*.log\" /home/user"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "`find /home/user -name \"*.log\" -mtime -1` correctly matches files by name pattern and modified time within 1 day (24 hours).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "unix-005",
+    "subject": "Unix",
+    "topic": "Commands: ln, du, kill, sleep",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "What is the primary difference between a hard link and a symbolic (soft) link in Unix?",
+    "options": [
+      "Hard links can link across different file systems; soft links cannot",
+      "A hard link shares the same inode number; deleting the original file preserves hard link contents",
+      "Soft links cannot link to directories",
+      "Hard links take significantly more disk space than symbolic links"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "A hard link is another directory entry pointing to the exact same inode. The file data remains on disk as long as the inode link count is >= 1.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "unix-006",
+    "subject": "Unix",
+    "topic": "Shell Scripting",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "In a Unix bash script, which special variable holds the exit status of the most recently executed foreground command?",
+    "options": [
+      "$$",
+      "$?",
+      "$#",
+      "$@"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "`$?` holds the exit status code (0 for success, non-zero for error) of the last executed command.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "unix-007",
+    "subject": "Unix",
+    "topic": "Environment: env, PATH, CLASSPATH",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "Which environment variable in Unix specifies the list of directories searched when executing a command?",
+    "options": [
+      "HOME",
+      "USER",
+      "PATH",
+      "SHELL"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "`PATH` stores a colon-separated list of directories searched by the shell to find executable programs.",
+    "pyqYear": 2021
+  },
+  {
+    "id": "unix-008",
+    "subject": "Unix",
+    "topic": "vi editor",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "In the vi editor command mode, which keystroke deletes the current line?",
+    "options": [
+      "x",
+      "dd",
+      "dw",
+      "yy"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "`dd` in vi command mode deletes the entire current line into the default buffer.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "unix-009",
+    "subject": "Unix",
+    "topic": "Commands: ln, du, kill, sleep",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following Unix kill signals cannot be caught, blocked, or ignored by a process?",
+    "options": [
+      "SIGINT (Signal 2)",
+      "SIGKILL (Signal 9)",
+      "SIGTERM (Signal 15)",
+      "SIGSTOP (Signal 19)"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "SIGKILL (9) and SIGSTOP (19) are handled directly by the Unix kernel and cannot be intercepted, caught, or ignored by any user-level process handler.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "unix-010",
+    "subject": "Unix",
+    "topic": "Shell & Wildcard",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following are valid Unix shell I/O redirection operators?",
+    "options": [
+      "`>` (Redirect stdout to file, overwrite)",
+      "`>>` (Redirect stdout to file, append)",
+      "`2>&1` (Redirect stderr to stdout)",
+      "`<` (Redirect file content to stdin)"
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "All four options are standard Unix shell I/O redirection syntax. `>` overwrites, `>>` appends, `2>&1` combines stderr with stdout, and `<` reads from file.",
+    "pyqYear": 2023
+  }
+]

@@ -1,0 +1,34 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next/
+/out/
+/build
+
+# local runtime data & cache
+/.data/
+*.tsbuildinfo
+
+# environment variables & credentials
+.env
+.env*.local
+!.env.local.example
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# system & OS
+.DS_Store
+Thumbs.db
+*.pem
+
+# reference cloned repos (local study only)
+/reference/mock-test/
+/reference/cbt-system/
+/reference/cissp-study/
+/reference/cbt-basic/

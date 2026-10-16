@@ -1,0 +1,201 @@
+[
+  {
+    "id": "ds-001",
+    "subject": "Data Structure",
+    "topic": "Stack",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "What is the equivalent postfix notation for the infix arithmetic expression `A + B * (C - D) / E`?",
+    "options": [
+      "A B C D - * E / +",
+      "A B + C D - * E /",
+      "A B C * + D E / -",
+      "+ A / * B - C D E"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Parenthesized (C - D) becomes CD-. Then B * (CD-) becomes BCD-*. Then division by E yields BCD-*E/. Finally addition with A yields ABCD-*E/+.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "ds-002",
+    "subject": "Data Structure",
+    "topic": "Tree",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "In a binary search tree (BST), which traversal order always visits node keys in non-decreasing (sorted) order?",
+    "options": [
+      "Pre-order",
+      "In-order",
+      "Post-order",
+      "Level-order"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In-order traversal visits (Left, Root, Right), which for any valid BST outputs the values in strictly ascending sorted order.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "ds-003",
+    "subject": "Data Structure",
+    "topic": "Sorting",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "What is the worst-case time complexity of QuickSort on an array of n elements?",
+    "options": [
+      "O(n log n)",
+      "O(n)",
+      "O(n²)",
+      "O(log n)"
+    ],
+    "answer": 2,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "When partitions are maximally unbalanced (e.g., pivot is consistently the minimum or maximum element on an already sorted array), QuickSort degrades to O(n²).",
+    "pyqYear": 2024
+  },
+  {
+    "id": "ds-004",
+    "subject": "Data Structure",
+    "topic": "Queue",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "In a circular queue implemented using an array of size N, what condition indicates that the queue is full?",
+    "options": [
+      "front == rear",
+      "(rear + 1) % N == front",
+      "rear == N - 1",
+      "front == (rear + 1)"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "In an array-based circular queue with one empty slot reserved to distinguish full from empty, the queue is full when `(rear + 1) % N == front`.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "ds-005",
+    "subject": "Data Structure",
+    "topic": "Graph",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Which algorithmic paradigm is employed by Dijkstra's Single Source Shortest Path algorithm on non-negative weighted graphs?",
+    "options": [
+      "Dynamic Programming",
+      "Greedy Method",
+      "Divide and Conquer",
+      "Backtracking"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Dijkstra's algorithm greedily selects the unvisited vertex with the minimum tentative distance at each step.",
+    "pyqYear": 2023
+  },
+  {
+    "id": "ds-006",
+    "subject": "Data Structure",
+    "topic": "Linked List",
+    "difficulty": "MEDIUM",
+    "type": "MCQ_SINGLE",
+    "question": "Floyd's Cycle-Finding Algorithm (tortoise and hare) detects a loop in a linked list using two pointers moving at speeds of:",
+    "options": [
+      "1 node per step and 2 nodes per step",
+      "1 node per step and 3 nodes per step",
+      "2 nodes per step and 4 nodes per step",
+      "Pointers moving in opposite directions"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Floyd's algorithm uses a slow pointer advancing by 1 node and a fast pointer advancing by 2 nodes per step. If a cycle exists, they are guaranteed to meet inside the loop in O(n) time.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "ds-007",
+    "subject": "Data Structure",
+    "topic": "Tree",
+    "difficulty": "HARD",
+    "type": "MCQ_SINGLE",
+    "question": "What is the maximum number of nodes in a binary tree of height h (where a tree with root only has height 0)?",
+    "options": [
+      "2^(h+1) - 1",
+      "2^h - 1",
+      "2^(h-1)",
+      "2^h + 1"
+    ],
+    "answer": 0,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "A full binary tree has 2^0 + 2^1 + ... + 2^h = 2^(h+1) - 1 nodes.",
+    "pyqYear": 2021
+  },
+  {
+    "id": "ds-008",
+    "subject": "Data Structure",
+    "topic": "Searching",
+    "difficulty": "EASY",
+    "type": "MCQ_SINGLE",
+    "question": "What is the prerequisite for performing Binary Search on an array?",
+    "options": [
+      "The array must be stored as a linked list",
+      "The elements of the array must be sorted",
+      "The array size must be an exact power of 2",
+      "The elements must be non-negative integers"
+    ],
+    "answer": 1,
+    "marks": 1,
+    "negativeMarks": 0.25,
+    "explanation": "Binary Search relies on sorted order to eliminate half of the remaining search space with each comparison in O(log n) time.",
+    "pyqYear": 2022
+  },
+  {
+    "id": "ds-009",
+    "subject": "Data Structure",
+    "topic": "Sorting",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following sorting algorithms are STABLE in their standard implementations?",
+    "options": [
+      "Merge Sort",
+      "Insertion Sort",
+      "Quick Sort",
+      "Bubble Sort"
+    ],
+    "answer": [
+      0,
+      1,
+      3
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "Merge Sort, Insertion Sort, and Bubble Sort maintain the relative order of duplicate elements. Quick Sort swaps elements over large distances and is inherently unstable.",
+    "pyqYear": 2024
+  },
+  {
+    "id": "ds-010",
+    "subject": "Data Structure",
+    "topic": "Graph",
+    "difficulty": "HARD",
+    "type": "MCQ_MULTI",
+    "question": "Which of the following statements about Minimum Spanning Trees (MST) on a connected, undirected graph with positive distinct edge weights are TRUE?",
+    "options": [
+      "The graph has a unique Minimum Spanning Tree.",
+      "The edge with the minimum weight in the whole graph must belong to every MST.",
+      "Kruskal's algorithm finds the MST using a Disjoint Set Union (DSU) data structure in O(E log V) time.",
+      "Adding any new edge to an MST creates exactly one cycle."
+    ],
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "marks": 2,
+    "negativeMarks": 0,
+    "explanation": "When edge weights are distinct, the MST is unique. The minimum edge is always included. Kruskal uses Union-Find (DSU), and adding an edge to any tree creates exactly one cycle.",
+    "pyqYear": 2023
+  }
+]
